@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quadro de Medalhas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img class="header__logo" src="./src/img/logo.svg" alt="" />
+    </header>
+    <div class="container">
+      <section>
+        <form class="container__form">
+          <div>
+            <label class="container__label" for="">Pesquisar</label>
+            <div>
+              <img src="./src/img/search.svg" alt="" />
+              <input class="container__input" type="text" placeholder="pesquisar por mais" />
+            </div>
+            <span class="container__exemplo">Ex: Brasil</span>
+          </div>
+          <button class="container__btnSubmit" type="submit">Pesquisar</button>
+        </form>
+      </section>
+    </div>
+    <main>
+      <div class="container">
+        <table class="container__table">
+          <thead class="table__header">
+            <tr>
+              <th class="table__data__head--center">
+                <div id="rank" class="table__head__filter">
+                  <span>Posição</span>
+                  <img class="sort arrow--up" src="./src/img/sort-arrow.svg" alt="" />
+                </div>
+              </th>
+              <th class="table__data__head--left">País</th>
+              <th class="table__data__head--center">
+                <div id="medal_gold" class="table__head__filter">
+                  <span>Ouro</span>
+                  <img src="./src/img/sort-arrow.svg" alt="" />
+                </div>
+              </th>
+              <th class="table__data__head--center">
+                <div id="medal_silver" class="table__head__filter">
+                  <span>Prata</span>
+                  <img src="./src/img/sort-arrow.svg" alt="" />
+                </div>
+              </th>
+              <th class="table__data__head--center">
+                <div id="medal_bronze" class="table__head__filter">
+                  <span>Bronze</span>
+                  <img src="./src/img/sort-arrow.svg" alt="" />
+                </div>
+              </th>
+              <th class="table__data__head--center">Total</th>
+            </tr>
+          </thead>
+          <tbody class="table__body"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <script type="module" src="./src/js/script.js"></script>
+  </body>
+</html>
